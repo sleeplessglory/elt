@@ -32,7 +32,7 @@ services:
       - elt_network
     depends_on: #script won't run unless these specified services finish initialising:
       - source_postgres
-      - destination_db
+      - destination_postgres
     
 networks:
   elt_network:
